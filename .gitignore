@@ -18,3 +18,7 @@ gradle-app.setting
 *.jar
 
 *.MF
+
+.idea/workspace.xml
+
+.idea/misc.xml
