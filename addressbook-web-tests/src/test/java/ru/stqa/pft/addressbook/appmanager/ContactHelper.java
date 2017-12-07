@@ -11,7 +11,7 @@ public class ContactHelper extends HelperBase {
   }
 
   public void submitContactForm() {
-    wd.findElement(By.cssSelector("[type=submit]")).click();
+    click(By.cssSelector("[type=submit]"));
   }
 
   public void fillContactForm(ContactData contactData) {
@@ -35,5 +35,13 @@ public class ContactHelper extends HelperBase {
 
   public void returnToHomePage() {
     click(By.cssSelector(".msgbox i"));
+  }
+
+  public void initContactModifiction() {
+    click(By.cssSelector("[title=Edit]"));
+  }
+
+  public void submitContactModification() {
+    click(By.name("update"));
   }
 }
