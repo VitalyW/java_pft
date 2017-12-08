@@ -10,11 +10,21 @@ public class NavigationHelper extends HelperBase {
   }
 
   public void gotoGroupPage() {
-    click(By.cssSelector(".admin"));
+    if (isElementPresent(By.tagName("h1"))
+            && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+              && isElementPresent(By.name("new"))) {
+      return;
+    } else {
+      click(By.cssSelector(".admin"));
+    }
   }
 
   public void goToHomePage() {
-    click(By.cssSelector("li:nth-child(1)"));
+    if (isElementPresent(By.id("maintable"))) {
+      return;
+    } else {
+      click(By.cssSelector("li:nth-child(1)"));
+    }
   }
 
   public void acceptAlert() {
