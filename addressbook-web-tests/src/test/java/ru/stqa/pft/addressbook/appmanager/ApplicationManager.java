@@ -29,7 +29,7 @@ public class ApplicationManager {
     } else if (browser.equals(BrowserType.SAFARI)) {
       wd = new SafariDriver();
     }
-//    wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/index.php");
     sessionHelper = new SessionHelper(wd);
     groupHelper = new GroupHelper(wd);
