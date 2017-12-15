@@ -75,15 +75,20 @@ public class ContactHelper extends HelperBase {
 
   public void waitUntilPageRefreshesAfterContactDeletion() {
     WebDriverWait wait = new WebDriverWait(wd, 10);
-    WebElement listOfContacts = wait.until(d -> d.findElement(By.cssSelector("[name='selected[]']")));
+    wait.until(d -> d.findElement(By.cssSelector("[name='selected[]']")));
   }
 
   public List<ContactData> getContactList() {
     List<ContactData> contacts = new ArrayList<>();
     List<WebElement> elements = wd.findElements(By.cssSelector("[name=entry]"));
-    for (WebElement element : elements) {
-      String name = element.getText();
-      ContactData contact = new ContactData(name, null, null, null, null);
+
+    for (WebElement e : elements) {
+      String allText = e.getText();
+      String lastName = allText.contains(" ") ? allText.split(" ")[0] : allText;
+      String firstName = allText.contains(" ") ? allText.split(" ")[1] : allText;
+      String email = allText.contains(" ") ? allText.split(" ")[2] : allText;
+      String phone = allText.contains(" ") ? allText.split(" ")[3] : allText;
+      ContactData contact = new ContactData(firstName, lastName, phone, email, null);
       contacts.add(contact);
     }
     return contacts;
