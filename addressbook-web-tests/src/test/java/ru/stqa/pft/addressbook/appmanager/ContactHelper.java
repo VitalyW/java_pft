@@ -2,7 +2,9 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
@@ -42,7 +44,7 @@ public class ContactHelper extends HelperBase {
   }
 
   public void returnToHomePage() {
-    click(By.cssSelector(".msgbox i"));
+    click(By.linkText("home page"));
   }
 
   public void initContactModifiction() {
@@ -62,5 +64,14 @@ public class ContactHelper extends HelperBase {
 
   public boolean isThereAContact() {
     return isElementPresent(By.cssSelector("[name='selected[]']"));
+  }
+
+  public int getContactCount() {
+    return wd.findElements(By.cssSelector("[name='selected[]']")).size();
+  }
+
+  public void waitUntilPageRefreshesAfterContactDeletion() {
+    WebDriverWait wait = new WebDriverWait(wd, 10);
+    WebElement listOfContacts = wait.until(d -> d.findElement(By.cssSelector("[name='selected[]']")));
   }
 }
