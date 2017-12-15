@@ -15,12 +15,49 @@ public class ContactData {
     this.group = group;
   }
 
+  @Override
+  public String toString() {
+    return "ContactData{" + "name='" + name + '\'' + ", lastname='" + lastname + '\''
+            + ", telephone='" + telephone + '\'' + ", email='" + email + '\'' + '}';
+  }
+
   public String getName() {
     return name;
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+
+    ContactData that = (ContactData) o;
+
+    if (name != null ? !name.equals(that.name) : that.name != null) {
+      return false;
+    }
+    if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) {
+      return false;
+    }
+    if (telephone != null ? !telephone.equals(that.telephone) : that.telephone != null) return false;
+    return email != null ? email.equals(that.email) : that.email == null;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = name != null ? name.hashCode() : 0;
+    result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+    result = 31 * result + (telephone != null ? telephone.hashCode() : 0);
+    result = 31 * result + (email != null ? email.hashCode() : 0);
+    return result;
+  }
+
   public String getLastname() {
     return lastname;
+
   }
 
   public String getTelephone() {
