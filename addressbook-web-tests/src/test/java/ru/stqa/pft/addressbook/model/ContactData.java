@@ -9,7 +9,7 @@ public class ContactData {
   private final String group;
 
   public ContactData(String name, String lastname, String telephone, String email, String group) {
-    this.id = 0;
+    this.id = Integer.MAX_VALUE;
     this.name = name;
     this.lastname = lastname;
     this.telephone = telephone;
@@ -28,13 +28,11 @@ public class ContactData {
 
   @Override
   public boolean equals(Object o) {
-
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
 
     ContactData that = (ContactData) o;
 
-    if (id != that.id) return false;
     if (name != null ? !name.equals(that.name) : that.name != null) return false;
     if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
     if (telephone != null ? !telephone.equals(that.telephone) : that.telephone != null) return false;
@@ -43,8 +41,7 @@ public class ContactData {
 
   @Override
   public int hashCode() {
-    int result = id;
-    result = 31 * result + (name != null ? name.hashCode() : 0);
+    int result = name != null ? name.hashCode() : 0;
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     result = 31 * result + (telephone != null ? telephone.hashCode() : 0);
     result = 31 * result + (email != null ? email.hashCode() : 0);
