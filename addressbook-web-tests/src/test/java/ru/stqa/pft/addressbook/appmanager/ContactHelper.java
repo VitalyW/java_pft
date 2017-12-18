@@ -50,8 +50,8 @@ public class ContactHelper extends HelperBase {
     click(By.linkText("home page"));
   }
 
-  public void initContactModifiction() {
-    click(By.cssSelector("[title=Edit]"));
+  public void initContactModifiction(int index) {
+    wd.findElements(By.cssSelector("[title=Edit]")).get(index).click();
   }
 
   public void submitContactModification() {
