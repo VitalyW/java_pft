@@ -7,12 +7,13 @@ public class ContactData {
   private String homePhone;
   private String mobilePhone;
   private String workPhone;
+  private String allPhones;
   private String email;
   private String email2;
   private String email3;
   private String allEmails;
   private String group;
-  private String allPhones;
+  private String address;
 
   @Override
   public boolean equals(Object o) {
@@ -24,10 +25,7 @@ public class ContactData {
     if (id != that.id) return false;
     if (name != null ? !name.equals(that.name) : that.name != null) return false;
     if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-    if (homePhone != null ? !homePhone.equals(that.homePhone) : that.homePhone != null) return false;
-    if (mobilePhone != null ? !mobilePhone.equals(that.mobilePhone) : that.mobilePhone != null) return false;
-    if (workPhone != null ? !workPhone.equals(that.workPhone) : that.workPhone != null) return false;
-    return email != null ? email.equals(that.email) : that.email == null;
+    return address != null ? address.equals(that.address) : that.address == null;
   }
 
   @Override
@@ -35,10 +33,7 @@ public class ContactData {
     int result = id;
     result = 31 * result + (name != null ? name.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-    result = 31 * result + (homePhone != null ? homePhone.hashCode() : 0);
-    result = 31 * result + (mobilePhone != null ? mobilePhone.hashCode() : 0);
-    result = 31 * result + (workPhone != null ? workPhone.hashCode() : 0);
-    result = 31 * result + (email != null ? email.hashCode() : 0);
+    result = 31 * result + (address != null ? address.hashCode() : 0);
     return result;
   }
 
@@ -51,7 +46,12 @@ public class ContactData {
             ", homePhone='" + homePhone + '\'' +
             ", mobilePhone='" + mobilePhone + '\'' +
             ", workPhone='" + workPhone + '\'' +
+            ", allPhones='" + allPhones + '\'' +
             ", email='" + email + '\'' +
+            ", email2='" + email2 + '\'' +
+            ", email3='" + email3 + '\'' +
+            ", allEmails='" + allEmails + '\'' +
+            ", address='" + address + '\'' +
             '}';
   }
 
@@ -115,6 +115,11 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
   public String getLastname() {
     return lastname;
 
@@ -163,4 +168,9 @@ public class ContactData {
   public String getGroup() {
     return group;
   }
+
+  public String getAddress() {
+    return address;
+  }
+
 }

@@ -20,7 +20,7 @@ public class ContactEmailTests extends TestBase {
               new ContactData()
                       .withName("Name").withLastname("Lastname").withHomePhone("1234567890").withMobilePhone("923093209")
                       .withWorkPhone("2332323200").withEmail("test@test.com").withEmail2("test2@test2.com")
-                      .withEmail3("test3@test3.com").withGroup("test1"), true);
+                      .withEmail3("test3@test3.com").withAddress("Hackerway 1").withGroup("test1"), true);
     }
   }
 
