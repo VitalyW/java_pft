@@ -9,6 +9,7 @@ public class ContactData {
   private String workPhone;
   private String email;
   private String group;
+  private String allPhones;
 
   @Override
   public boolean equals(Object o) {
@@ -81,6 +82,11 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withAllPhones(String allPhones) {
+    this.allPhones = allPhones;
+    return this;
+  }
+
   public ContactData withEmail(String email) {
     this.email = email;
     return this;
@@ -114,6 +120,10 @@ public class ContactData {
 
   public String getWorkPhone() {
     return workPhone;
+  }
+
+  public String getAllPhones() {
+    return allPhones;
   }
 
   public String getEmail() {
