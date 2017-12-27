@@ -24,7 +24,9 @@ public class ContactHelper extends HelperBase {
   public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getName());
     type(By.name("lastname"), contactData.getLastname());
-    type(By.name("home"), contactData.getTelephone());
+    type(By.name("home"), contactData.getHomePhone());
+    type(By.name("mobile"), contactData.getMobilePhone());
+    type(By.name("work"), contactData.getWorkPhone());
     type(By.name("email"), contactData.getEmail());
 
     if (creation) {
@@ -125,11 +127,25 @@ public class ContactHelper extends HelperBase {
       List<WebElement> cells = element.findElements(By.tagName("td"));
       String lastName = cells.get(1).getText();
       String firstName = cells.get(2).getText();
-      String phone = cells.get(5).getText();
+      String[] phones = cells.get(5).getText().split("\n");
       String email = cells.get(4).getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
-      contactCache.add(new ContactData().withId(id).withName(firstName).withLastname(lastName).withTelephone(phone).withEmail(email));
+      contactCache.add(new ContactData().withId(id).withName(firstName).withLastname(lastName).withHomePhone(phones[0])
+              .withMobilePhone(phones[1]).withWorkPhone(phones[2]).withEmail(email));
     }
     return new Contacts(contactCache);
+  }
+
+  public ContactData infoFromEditPage(ContactData contact) {
+    initContactModifictionById(contact.getId());
+    String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+    String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+    String home = wd.findElement(By.name("home")).getAttribute("value");
+    String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
+    String work = wd.findElement(By.name("work")).getAttribute("value");
+    wd.navigate().back();
+    return new ContactData().withId(contact.getId()).withName(firstname).withLastname(lastname).withHomePhone(home)
+            .withMobilePhone(mobile).withWorkPhone(work);
+
   }
 }
