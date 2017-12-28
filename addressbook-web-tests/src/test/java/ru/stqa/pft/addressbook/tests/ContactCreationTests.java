@@ -23,8 +23,8 @@ public class ContactCreationTests extends TestBase {
     while (line != null) {
       String[] split = line.split(";");
       list.add(new Object[] {new ContactData().withName(split[0]).withLastname(split[1]).withAddress(split[2])
-                                  .withEmail(split[3]).withEmail2(split[4]).withEmail3(split[5]).withHomePhone(split[6])
-                                      .withMobilePhone(split[7]).withWorkPhone(split[8])});
+              .withEmail(split[3]).withEmail2(split[4]).withEmail3(split[5]).withHomePhone(split[6])
+              .withMobilePhone(split[7]).withWorkPhone(split[8]).withGroup(split[9]).withPhoto(new File(split[10]))});
       line = reader.readLine();
     }
     return list.iterator();
@@ -35,7 +35,6 @@ public class ContactCreationTests extends TestBase {
     app.goTo().homePage();
     Contacts before = app.contact().all();
     app.contact().initContactCreation();
-//    File photo = new File("src/test/resources/bmw.png");
     app.contact().create(contact, true);
     assertThat(app.contact().count(), equalTo(before.size() + 1));
     Contacts after = app.contact().all();
@@ -43,7 +42,7 @@ public class ContactCreationTests extends TestBase {
             contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test(enabled = false)
   public void testBadContactCreation() {
     app.goTo().homePage();
     Contacts before = app.contact().all();
