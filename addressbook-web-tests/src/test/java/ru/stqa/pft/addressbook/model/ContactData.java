@@ -34,7 +34,7 @@ public class ContactData {
   private String group;
   @Expose
   private String address;
-  @Expose
+//  @Expose
   private File photo;
 
   @Override
