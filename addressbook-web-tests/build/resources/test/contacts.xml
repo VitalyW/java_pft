@@ -1,0 +1,41 @@
+<list>
+  <contact>
+    <name>Name 0</name>
+    <lastname>Lastname 0</lastname>
+    <homePhone>1212230</homePhone>
+    <mobilePhone>93012335</mobilePhone>
+    <workPhone>0121223</workPhone>
+    <email>test0@test.com</email>
+    <email2>test0@test2.com</email2>
+    <email3>test0@test3.com</email3>
+    <group>test1</group>
+    <address>Hackerway 0</address>
+    <photo>src/test/resources/bmw.png</photo>
+  </contact>
+  <contact>
+    <name>Name 1</name>
+    <lastname>Lastname 1</lastname>
+    <homePhone>1212231</homePhone>
+    <mobilePhone>93112335</mobilePhone>
+    <workPhone>1121223</workPhone>
+    <email>test1@test.com</email>
+    <email2>test1@test2.com</email2>
+    <email3>test1@test3.com</email3>
+    <group>test1</group>
+    <address>Hackerway 1</address>
+    <photo>src/test/resources/bmw.png</photo>
+  </contact>
+  <contact>
+    <name>Name 2</name>
+    <lastname>Lastname 2</lastname>
+    <homePhone>1212232</homePhone>
+    <mobilePhone>93212335</mobilePhone>
+    <workPhone>2121223</workPhone>
+    <email>test2@test.com</email>
+    <email2>test2@test2.com</email2>
+    <email3>test2@test3.com</email3>
+    <group>test1</group>
+    <address>Hackerway 2</address>
+    <photo>src/test/resources/bmw.png</photo>
+  </contact>
+</list>
