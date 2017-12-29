@@ -22,3 +22,5 @@ gradle-app.setting
 .idea/workspace.xml
 
 .idea/misc.xml
+
+*.log
