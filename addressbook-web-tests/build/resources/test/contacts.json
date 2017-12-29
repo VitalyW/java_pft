@@ -9,7 +9,8 @@
     "email2": "test0@test2.com",
     "email3": "test0@test3.com",
     "group": "test1",
-    "address": "Hackerway 0"
+    "address": "Hackerway 0",
+    "photo": {}
   },
   {
     "name": "Name 1",
@@ -21,7 +22,8 @@
     "email2": "test1@test2.com",
     "email3": "test1@test3.com",
     "group": "test1",
-    "address": "Hackerway 1"
+    "address": "Hackerway 1",
+    "photo": {}
   },
   {
     "name": "Name 2",
@@ -33,6 +35,7 @@
     "email2": "test2@test2.com",
     "email3": "test2@test3.com",
     "group": "test1",
-    "address": "Hackerway 2"
+    "address": "Hackerway 2",
+    "photo": {}
   }
 ]
