@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactPhoneTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-01-02T17:11:34" hostname="Vitalys-MBP" time="0.334">
+  <properties/>
+  <testcase name="testContactPhones" classname="ru.stqa.pft.addressbook.tests.ContactPhoneTests" time="0.334"/>
+  <system-out><![CDATA[11:11:34.735 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase - Start test testContactPhones with parameters []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
