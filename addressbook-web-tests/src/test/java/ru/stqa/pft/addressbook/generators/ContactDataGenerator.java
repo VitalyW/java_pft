@@ -74,7 +74,7 @@ public class ContactDataGenerator {
       for (ContactData contact : contacts) {
         writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getName(), contact.getLastname(),
                 contact.getAddress(), contact.getEmail(), contact.getEmail2(), contact.getEmail3(), contact.getHomePhone(),
-                contact.getMobilePhone(), contact.getWorkPhone(), contact.getGroup(), contact.getPhoto()));
+                contact.getMobilePhone(), contact.getWorkPhone(), contact.getPhoto()));
       }
     }
   }
@@ -86,7 +86,7 @@ public class ContactDataGenerator {
               .withAddress(String.format("Hackerway %s", i)).withEmail(String.format("test%s@test.com", i))
               .withEmail2(String.format("test%s@test2.com", i)).withEmail3(String.format("test%s@test3.com", i))
               .withHomePhone(String.format("121223%s", i)).withMobilePhone(String.format("93%s12335", i))
-              .withWorkPhone(String.format("%s121223", i)).withGroup("test1").withPhoto(new File("src/test/resources/bmw.png")));
+              .withWorkPhone(String.format("%s121223", i)).withPhoto(new File("src/test/resources/bmw.png")));
     }
     return contacts;
   }
