@@ -252,6 +252,9 @@ public class ContactData {
   }
 
   public File getPhoto() {
+    if (photo == null) {
+      photo = "";
+    }
     return new File(photo);
   }
 
