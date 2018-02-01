@@ -22,6 +22,8 @@ public class ApplicationManager {
   private FtpHelper ftp;
   private MailHelper mailHelper;
   private JamesHelper jamesHelper;
+  private LoginHelper loginHelper;
+  private PasswordResetHelper passwordResetHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -91,4 +93,19 @@ public class ApplicationManager {
     }
     return jamesHelper;
   }
+
+  public LoginHelper login() {
+    if (loginHelper == null) {
+      loginHelper = new LoginHelper(this);
+    }
+    return loginHelper;
+  }
+
+  public PasswordResetHelper passwordResetHelper() {
+    if (passwordResetHelper == null) {
+      passwordResetHelper = new PasswordResetHelper(this);
+    }
+    return passwordResetHelper;
+  }
+
 }
