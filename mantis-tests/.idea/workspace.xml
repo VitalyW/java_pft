@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51d56aad-0ee5-4dd3-b350-a3b96be0d4cd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" afterPath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" />
+      <change beforePath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" afterPath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" />
+      <change beforePath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" afterPath="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -55,15 +57,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,11 +72,26 @@
       <file leaf-file-name="RestAssuredTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-387">
-              <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1477#1478#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,15 +100,17 @@
       <file leaf-file-name="Issue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1176,10 +1193,11 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" />
-        <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" />
         <option value="$PROJECT_DIR$/../rest-sample/build.gradle" />
         <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" />
+        <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" />
         <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" />
+        <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" />
       </list>
     </option>
   </component>
@@ -1218,12 +1236,6 @@
               <item name="mantis-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mantis-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="mantis-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -1644,14 +1656,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2124,40 +2128,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-          <folding>
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-387">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1802#1803#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
           </folding>
         </state>
       </provider>
