@@ -24,6 +24,7 @@ public class ApplicationManager {
   private JamesHelper jamesHelper;
   private LoginHelper loginHelper;
   private PasswordResetHelper passwordResetHelper;
+  private SoapHelper soapHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -106,6 +107,13 @@ public class ApplicationManager {
       passwordResetHelper = new PasswordResetHelper(this);
     }
     return passwordResetHelper;
+  }
+
+  public SoapHelper soap() {
+    if (soapHelper == null) {
+      soapHelper = new SoapHelper(this);
+    }
+    return soapHelper;
   }
 
 }
