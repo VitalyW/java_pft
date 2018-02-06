@@ -61,24 +61,24 @@ public class ContactHelper extends HelperBase {
   }
 
   public void returnToHomePage() {
-    click(By.linkText("home page"));
+    click(By.linkText("home"));
   }
 
   public void initContactModifictionById(int id) {
     wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%d']", id ))).click();
   }
 
-//  public void addToGroup(ContactData contact, GroupData group) {
-//    selectContactById(contact.getId());
-//    new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group.getName());
-//    click(By.name("add"));
-//  }
-//
-//  public void removeFromGroup(ContactData contact, GroupData group) {
-//    new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName());
-//    selectContactById(contact.getId());
-//    click(By.name("remove"));
-//  }
+  public void addToGroup(ContactData contact, GroupData group) {
+    selectContactById(contact.getId());
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(String.valueOf(group.getId()));
+    click(By.name("add"));
+  }
+
+  public void removeFromGroup(ContactData contact, GroupData group) {
+    new Select(wd.findElement(By.name("group"))).selectByValue(String.valueOf(group.getId()));
+    selectContactById(contact.getId());
+    click(By.name("remove"));
+  }
 
   public void addGroup(ContactData contact) {
     selectContactById(contact.getId());
